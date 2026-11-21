@@ -1,0 +1,16 @@
+services:
+  - type: web
+    name: pacte-agenda-mcp
+    env: node
+    plan: free
+    buildCommand: npm install
+    startCommand: node server.js
+    envVars:
+      - key: PORT
+        value: 3000
+      - key: MCP_SECRET
+        generateValue: true
+      - key: FB_PROJECT
+        value: pacte-agenda-6c7cf
+      - key: FB_API_KEY
+        value: AIzaSyDt3DBRi_T6qoW14dpPXg1ZcVjVUV7RW6c

@@ -1,0 +1,14 @@
+{
+  "name": "pacte-agenda-mcp",
+  "version": "1.0.0",
+  "description": "MCP server for PACTE Agenda – accessible from Claude mobile",
+  "main": "server.js",
+  "engines": { "node": ">=18" },
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
